@@ -1,0 +1,183 @@
+.story-section .info {
+  padding: 80px 35px;
+}
+.story-section .info .description {
+  font-size: 26px;
+  line-height: 32px;
+}
+.story-section .img1 {
+  height: 100%;
+}
+
+#products {
+  padding-top: 50px;
+}
+.products-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.product {
+  height: 500px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #dedede;
+}
+.product img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+}
+.product-info {
+  position: absolute;
+  top: 26px;
+  width: 270px;
+  text-align: center;
+  transition: all 0.3s;
+}
+.product:hover .product-info {
+  top: 10px;
+}
+.product-title {
+  padding: 20px 0;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+.product-description {
+  height: 30px;
+  padding-bottom: 30px;
+}
+.products-title {
+  padding: 40px 0;
+  text-align: center;
+  font-size: 32px;
+}
+
+.discover-section {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.discover-title {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+.section-name-bottom {
+  margin-bottom: 40px;
+}
+.discover-title div {
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+}
+.row {
+  margin: 0 40px;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.all-columns {
+  width: 30%;
+  position: relative;
+  overflow: hidden;
+}
+.columns-img {
+  background-image: url(../images/couple.JPG);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background-size 500ms linear;
+}
+.columns-img:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/couple.JPG);
+  background-position: center;
+  background-size: 110%;
+}
+.all-columns img {
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.3s;
+  display: block;
+  height: auto;
+  transform: scale(1);
+  z-index: -2;
+}
+.all-columns:hover img {
+  transform: scale(1.1);
+}
+.columns-info {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-align: center;
+}
+.columns-title {
+  text-transform: capitalize;
+  color: white;
+  font-size: 2rem;
+}
+
+.story-section .img1 {
+  background-image: url(../images/couple.JPG);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .products-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .story-section .img1 {
+    height: 80vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  .product {
+    height: 420px;
+  }
+  .product-info {
+    width: 100%;
+  }
+  .product img {
+    height: 200px;
+  }
+  .main-title {
+    font-size: 3.5rem;
+  }
+  .all-columns {
+    width: 80%;
+  }
+  .all-columns:last-child,
+  .all-columns:nth-child(2) {
+    display: none;
+  }
+  .story-section .img1 {
+    height: 50vh;
+  }  
+}

@@ -1,0 +1,81 @@
+.main-box {
+  padding-bottom: 140px;
+}
+.store-grid {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+}
+
+.store-info {
+  width: 100%;
+  text-align: center;
+}
+.store-title {
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  line-height: 40px;
+  padding-bottom: 10px;
+}
+.store-address {
+  color: #a4a4a4;
+  font-size: 16px;
+  line-height: 20px;
+}
+.store-hours {
+  padding: 20px 0;
+}
+.hours-title,
+.phone-title {
+  padding-top: 20px;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 1.8px;
+}
+.hours,
+.phone {
+  color: black;
+  font-size: 3rem;
+  letter-spacing: 3px;
+}
+.get-directions {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.get-directions a {
+  color: black;
+  font-size: 1rem;
+}
+
+.store-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1000px) {
+  .store-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 768px) {
+  .store-grid {
+    padding: 30px;
+  }
+  .phone,
+  .hours {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .phone,
+  .hours {
+    font-size: 2rem;
+  }
+  .store-title {
+    font-size: 1.3rem;   
+  }
+}

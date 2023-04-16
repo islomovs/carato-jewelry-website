@@ -1,0 +1,64 @@
+.privacy-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+}
+.privacy-title {
+  text-transform: capitalize;
+  font-size: 3rem;
+}
+.privacy-subtitle {
+  padding: 40px 0 0 20px;
+  line-height: 22px;
+}
+.privacy-subtitle a {
+  color: black;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.privacy-info {
+    margin: 20px 10%;
+    line-height: 28px;
+}
+
+.certificates {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.certificates-title {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 20px;
+}
+.certificates-imgs {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+.certificates-imgs img {
+    width: 300px;
+}
+
+@media screen and (max-width:1000px) {
+    .certificates-imgs {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .privacy-title {
+        font-size: 2.4rem;
+    }
+    .certificates-imgs {
+        grid-template-columns: 1fr;
+    }
+}

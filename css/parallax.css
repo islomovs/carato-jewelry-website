@@ -1,0 +1,51 @@
+.main-title {
+  text-transform: capitalize;
+  font-size: 4.8rem;
+  letter-spacing: 6px;
+}
+.main-title-branches {
+  font-size: 4.8rem;
+  letter-spacing: 6px;
+}
+.main-subs {
+  margin-top: 78px;
+  font-size: 13px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+.main-subs div {
+  padding: 8px 0;
+}
+.parallax {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background: url(../images/bg.jpg) repeat fixed 100%;
+  background-size: cover;
+  color: aliceblue;
+}
+.parallax-inner {
+  padding-top: 15%;
+  padding-bottom: 2%;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .parallax {
+    height: 70vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main-title {
+    margin-top: 40%;
+  }
+  .main-subs {
+    margin-top: 200px;
+  }
+  .main-title-branches {
+    margin-top: 40%;
+  }
+}

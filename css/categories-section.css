@@ -1,0 +1,112 @@
+.categories-section {
+  padding: 50px 0;
+}
+.categories-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.categories-title {
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.categories-subtitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin: 20px 0;
+}
+.carousel-wrap {
+  margin: 40px 70px;
+  position: relative;
+}
+.owl-carousel .owl-nav {
+  overflow: hidden;
+  height: 0px;
+}
+
+.owl-carousel .item {
+  text-align: center;
+}
+
+.owl-carousel .item .discover-container a div {
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  font-family: "Roboto", sans-serif;
+}
+.owl-carousel .nav-btn {
+  height: 47px;
+  position: absolute;
+  width: 26px;
+  cursor: pointer;
+  top: 200px !important;
+}
+
+.owl-carousel .owl-prev.disabled,
+.owl-carousel .owl-next.disabled {
+  pointer-events: none;
+  opacity: 0.2;
+}
+
+.products-section .carousel-wrap .owl-carousel .prev-slide {
+  background: url(../images/arrow.svg) no-repeat scroll 0;
+  transform: rotate(90deg);
+  left: 14px;
+}
+.products-section .carousel-wrap .owl-carousel .next-slide {
+  background: url(../images/arrow.svg) no-repeat scroll 0;
+  transform: rotate(-90deg);
+  right: 14px;
+}
+.categories-section .carousel-wrap .owl-carousel .prev-slide {
+  background: url(../images/nav-icon.png) no-repeat scroll 0 0;
+  left: 24px;
+}
+.categories-section .carousel-wrap .owl-carousel .next-slide {
+  background: url(../images/nav-icon.png) no-repeat scroll -24px 0px;
+  right: 24px;
+}
+
+span.img-text {
+  padding: 20px 0 30px 0;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 23px;
+  display: block;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 768px) {
+  .products-section .carousel-wrap .owl-carousel .prev-slide {
+    left: 7px;
+  }
+  .products-section .carousel-wrap .owl-carousel .next-slide {
+    right: 7px;
+  }
+  .categories-section .carousel-wrap .owl-carousel .prev-slide {
+    left: 12px;
+  }
+  .categories-section .carousel-wrap .owl-carousel .next-slide {
+    right: 12px;
+  }
+  .owl-two .prev-slide {
+    background: url(../images/arrow.svg) no-repeat scroll 0;
+    transform: rotate(90deg);
+    left: 7px;
+  }
+  .owl-two .next-slide {
+    background: url(../images/arrow.svg) no-repeat scroll 0;
+    transform: rotate(-90deg);
+    right: 7px;
+  }
+}
+@media screen and (max-width:480px) {
+  .carousel-wrap {
+    margin: 20px 30px;
+  } 
+}

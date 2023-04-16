@@ -1,0 +1,167 @@
+.slider-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider {
+  width: 100vw;
+  height: 480px;
+  overflow: hidden;
+}
+
+.slides {
+  width: 500%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  transition: 2s;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.slide-info {
+  background-color: white;
+  height: 40%;
+  padding: 2% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 50px;
+}
+.info-title {
+  letter-spacing: 1px;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.first {
+  background: url("../images/rings-slider-c.jpg") repeat fixed 100%;
+  background-size: cover;
+}
+.second {
+  background: url("../images/bg.jpg")
+    repeat fixed 100%;
+  background-size: cover;
+}
+.third {
+  background: url("https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+    repeat fixed 100%;
+  background-size: cover;
+}
+.fourth {
+  background: url("https://images.pexels.com/photos/192136/pexels-photo-192136.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+    repeat fixed 100%;
+  background-size: cover;
+}
+
+.slide img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.navigation-manual {
+  position: absolute;
+  width: 100%;
+  margin-top: 440px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  opacity: 1;
+  padding: 4px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 14px;
+}
+.manual-btn:hover {
+  background-color: white;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+  margin-left: -60%;
+}
+
+/* auto-navigation */
+
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 440px;
+}
+.navigation-auto div {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 4px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 14px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background: white;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background: white;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background: white;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+  background: white;
+}
+
+@media screen and (max-width: 768px) {
+  .slide {
+    justify-content: center;
+    align-items: center;
+  }
+  .slide-info {
+    height: 30%;
+    margin: 0 20px;
+  }
+  .slide-info hr {
+    display: none;
+  }
+  .slide-info .info-link-container {
+    display: none;
+  }
+  .info-title {
+    margin-bottom: 0px;
+  }
+}

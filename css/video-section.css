@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "Monthier";
+  src: url(../fonts/Monthier.otf);
+}
+.video-section {
+  padding: 50px 0;
+}
+.video-box video {
+  width: 100%;
+}
+
+.video-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.video-title {
+  text-align: center;
+  width: 90%;
+  font-size: 2rem;
+  letter-spacing: 5px;
+  font-weight: bold;
+  padding: 20px 0;
+}
+
+.video-description {
+  width: 90%;
+  text-align: center;
+  font-size: 18px;
+  line-height: 26px;
+  padding-top: 15px;
+}
+.status {
+  font-family: "Monthier", sans-serif;
+}
+
+@media screen and (max-width: 480px) {
+  .video-info {
+    padding-bottom: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .video-title {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+
+}

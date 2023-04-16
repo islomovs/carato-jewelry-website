@@ -1,0 +1,126 @@
+/* ~~~~~~~ INIT. BTN ~~~~~~~ */
+
+.btn {
+  display: inline-block;
+  position: relative;
+  color: white;
+  border: 1px solid white;
+  background-color: transparent;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  transition: all 500ms;
+  user-select: none;
+  font-size: 0.8125rem;
+  margin-top: 6%;
+  padding: 3% 16%;
+  z-index: 2;
+}
+
+.btn-info {
+  display: inline-block;
+  position: relative;
+  color: black;
+  border: 1px solid black;
+  background-color: transparent;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  transition: all 500ms;
+  user-select: none;
+  font-size: 0.8125rem;
+  margin-bottom: 30px;
+  padding: 5% 26%;
+  z-index: 2;
+}
+
+.get-directions-btn {
+  display: inline-block;
+  position: relative;
+  color: black;
+  border: 1px solid black;
+  background-color: transparent;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  transition: all 500ms;
+  user-select: none;
+  padding: 3% 15%;
+  z-index: 2;
+}
+
+.get-directions-btn::before,
+.btn-info::before,
+.btn::before {
+  content: "";
+  position: absolute;
+  transition: inherit;
+}
+
+/* .story-section .img:hover, */
+.columns-img:hover,
+.product:hover,
+.btn:hover,
+.get-directions-btn {
+  cursor: pointer;
+}
+
+.story-section .img:hover .btn,
+.columns-img:hover .btn,
+.btn:hover {
+  color: black;
+  transition-delay: 0.1s;
+}
+
+.story-section .img:hover .btn::before,
+.columns-img:hover .btn::before,
+.btn:hover::before {
+  background: white;
+  transition-delay: 1ms;
+}
+.get-directions-btn:hover::before {
+  background-color: #897864;
+}
+.product:hover .btn-info::before {
+  background-color: #897864;
+}
+
+/* From Left */
+
+.from-left::before {
+  top: 0;
+  width: 0;
+  height: 100%;
+  z-index: -1;
+}
+
+.from-left::before {
+  left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .product .from-left {
+    background-color: #bba081;
+  }
+  .columns-img .from-left,
+  .parallax-inner .from-left {
+    background-color: white;
+    color: black;
+  }
+}
+@media screen and (max-width: 480px) {
+  .btn-info {
+    padding: 5% 15%;
+  }
+  
+}
+.story-section .img:hover .from-left::before,
+.columns-img:hover .from-left::before,
+.product:hover .from-left::before,
+.from-left:hover::before {
+  width: 100%;
+}
+
+/* ~~~~~~~~~~~~ GLOBAL SETTINGS ~~~~~~~~~~~~ */
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}

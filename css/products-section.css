@@ -1,0 +1,68 @@
+.carousel-wrap {
+  margin: 40px 70px;
+  position: relative;
+}
+.owl-carousel1 .owl-nav {
+  overflow: hidden;
+  height: 0px;
+}
+
+.owl-carousel1 .item img {
+  width: 100%;
+  text-align: center;
+}
+
+.owl-carousel1 .item .discover-container a div {
+  font-size: 13px;
+  letter-spacing: 1.2px;
+}
+.owl-carousel1 .nav-btn {
+  height: 47px;
+  position: absolute;
+  width: 26px;
+  cursor: pointer;
+  top: 200px !important;
+}
+
+.owl-carousel1 .owl-prev.disabled,
+.owl-carousel1 .owl-next.disabled {
+  pointer-events: none;
+  opacity: 0.2;
+}
+
+.products-section .carousel-wrap .owl-carousel .prev-slide {
+  background: url(images/arrow.svg) no-repeat scroll 0;
+  transform: rotate(90deg);
+  left: 14px;
+}
+.products-section .carousel-wrap .owl-carousel .next-slide {
+  background: url(images/arrow.svg) no-repeat scroll 0;
+  transform: rotate(-90deg);
+  right: 14px;
+}
+
+.categories-section .carousel-wrap .owl-carousel .prev-slide {
+  background: url(images/nav-icon.png) no-repeat scroll 0 0;
+  left: 24px;
+}
+.categories-section .carousel-wrap .owl-carousel .next-slide {
+  background: url(images/nav-icon.png) no-repeat scroll -24px 0px;
+  right: 24px;
+}
+.owl-carousel1 .prev-slide:hover {
+  background-position: 0px -53px;
+}
+.owl-carousel1 .next-slide:hover {
+  background-position: -24px -53px;
+}
+
+span.img-text {
+  padding: 20px 0 30px 0;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 23px;
+  display: block;
+  text-transform: capitalize;
+}
